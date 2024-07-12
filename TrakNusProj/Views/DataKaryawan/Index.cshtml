@@ -1,0 +1,29 @@
+﻿@model List<TrakNusProj.Models.DataKaryawan>
+
+@{
+    ViewData["Title"] = "Data Karyawan";
+}
+
+<h1>Data Karyawan</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>NRP</th>
+            <th>Name</th>
+            <th>Divisi</th>
+            <th>Department</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var karyawan in Model)
+        {
+            <tr>
+                <td>@karyawan.NRP</td>
+                <td>@karyawan.Name</td>
+                <td>@karyawan.Divisi</td>
+                <td>@karyawan.Department</td>
+            </tr>
+        }
+    </tbody>
+</table>

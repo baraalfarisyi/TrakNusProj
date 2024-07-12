@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34825.169
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrakNusProj", "TrakNusProj\TrakNusProj.csproj", "{33FDF6C8-F51B-4D12-95D4-870DA3F00BA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrakNusLemburProj", "TrakNusLemburProj\TrakNusLemburProj.csproj", "{DC9113FC-1F08-4DAC-895E-E70EF54C7DEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33FDF6C8-F51B-4D12-95D4-870DA3F00BA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33FDF6C8-F51B-4D12-95D4-870DA3F00BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33FDF6C8-F51B-4D12-95D4-870DA3F00BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33FDF6C8-F51B-4D12-95D4-870DA3F00BA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC9113FC-1F08-4DAC-895E-E70EF54C7DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9113FC-1F08-4DAC-895E-E70EF54C7DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9113FC-1F08-4DAC-895E-E70EF54C7DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9113FC-1F08-4DAC-895E-E70EF54C7DEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86AEB7ED-EDFF-4CD8-B6ED-1A693082C96A}
+	EndGlobalSection
+EndGlobal

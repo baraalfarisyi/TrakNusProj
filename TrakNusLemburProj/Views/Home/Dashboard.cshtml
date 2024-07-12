@@ -1,0 +1,150 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="dashboard-container">
+    <aside class="sidebar">
+        <div class="profile-pic">
+            <img src="path/to/profile-pic.jpg" alt="Profile Picture">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/Dashboard">Dashboard</a></li>
+                <li class="parent-menu">
+                    <a href="#">DataLembur</a>
+                    <ul class="child-menu">
+                        <li><a href="/DataLembur/Insert">Input</a></li>
+                        <li><a href="/DataLembur/Index">View</a></li>
+                        <li><a href="/DataLembur/Update">Update</a></li>
+                        <li><a href="/DataLembur/Delete">Delete</a></li>
+                        <li><a href="/DataLembur/Report">Report</a></li>
+                    </ul>
+                </li>
+                <li><a href="/Account/Logout">Logout</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="main-content">
+        <div class="header">
+            <h1>DASHBOARD</h1>
+        </div>
+        <div class="content">
+            <h1 class="display-4">Welcome to the Dashboard</h1>
+            <p>Here you can manage your account and view your data.</p>
+
+            <div class="card">
+                <h3>Profile</h3>
+                <p>View and edit your profile information.</p>
+                <a href="/Account/Profile" class="btn btn-primary">Go to Profile</a>
+            </div>
+            <div class="card">
+                <h3>Transactions</h3>
+                <p>View your recent transactions.</p>
+                <a href="/Transactions/Index" class="btn btn-primary">View Transactions</a>
+            </div>
+            <div class="card">
+                <h3>Settings</h3>
+                <p>Adjust your account settings.</p>
+                <a href="/Account/Settings" class="btn btn-primary">Account Settings</a>
+            </div>
+            <div class="card">
+                <h3>Logout</h3>
+                <p>Log out of your account.</p>
+                <a href="/Account/Logout" class="btn btn-danger">Logout</a>
+            </div>
+        </div>
+    </main>
+</div>
+
+<style>
+    .dashboard-container {
+        display: flex;
+        height: 100vh;
+    }
+
+    .sidebar {
+        width: 200px;
+        background-color: #2d2f31;
+        color: #fff;
+        padding: 1rem;
+    }
+
+        .sidebar .profile-pic {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+            .sidebar .profile-pic img {
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+            }
+
+        .sidebar nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .sidebar nav ul li {
+                margin: 1rem 0;
+            }
+
+                .sidebar nav ul li a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+
+            .sidebar nav ul .parent-menu:hover .child-menu {
+                display: block;
+            }
+
+            .sidebar nav ul .child-menu {
+                list-style-type: none;
+                padding: 0;
+                margin-left: 20px;
+                display: none;
+            }
+
+    .main-content {
+        flex: 1;
+        padding: 1rem;
+        background-color: #f4f4f4;
+    }
+
+    .header {
+        background-color: #3c8dbc;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .content {
+        padding: 2rem;
+    }
+
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #3c8dbc;
+        cursor: pointer;
+    }
+
+    .btn-danger {
+        background-color: #d9534f;
+    }
+
+        .btn-primary:hover, .btn-danger:hover {
+            opacity: 0.8;
+        }
+</style>

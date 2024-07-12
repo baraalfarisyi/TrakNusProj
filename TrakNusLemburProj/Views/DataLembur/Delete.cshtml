@@ -1,0 +1,99 @@
+﻿@model TrakNusLemburProj.Models.DataLembur
+
+@{
+    ViewData["Title"] = "Delete Data Lembur";
+}
+
+<div class="form-container">
+    <h2>Delete Data Karyawan</h2>
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="form-group">
+            <label asp-for="NRP" class="control-label">NRP:</label>
+            <input asp-for="NRP" class="form-control"  />
+            <span asp-validation-for="NRP" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Name" class="control-label">Name:</label>
+            <input asp-for="Name" class="form-control"  />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Divisi" class="control-label">Divisi:</label>
+            <input asp-for="Divisi" class="form-control"  />
+            <span asp-validation-for="Divisi" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Department" class="control-label">Department:</label>
+            <input asp-for="Department" class="form-control"  />
+            <span asp-validation-for="Department" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="TglLembur" class="control-label">Tanggal Lembur:</label>
+            <input asp-for="TglLembur" class="form-control" type="date" />
+            <span asp-validation-for="TglLembur" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="MulaiLembur" class="control-label">Mulai Lembur:</label>
+            <input asp-for="MulaiLembur" class="form-control" type="datetime-local" />
+            <span asp-validation-for="MulaiLembur" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="AkhirLembur" class="control-label">Akhir Lembur:</label>
+            <input asp-for="AkhirLembur" class="form-control" type="datetime-local" />
+            <span asp-validation-for="AkhirLembur" class="text-danger"></span>
+        </div>
+        <div class="form-group buttons">
+            <button type="submit" class="btn btn-danger">Delete</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+</div>
+
+<style>
+    .form-container {
+        width: 400px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+    }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .form-group .hint {
+            display: block;
+            margin-top: 5px;
+            font-size: 0.875em;
+            color: #888;
+        }
+
+        .form-group .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    .btn {
+        padding: 10px 20px;
+    }
+</style>
